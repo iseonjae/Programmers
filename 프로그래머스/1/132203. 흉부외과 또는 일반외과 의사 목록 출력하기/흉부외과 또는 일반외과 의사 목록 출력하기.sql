@@ -7,4 +7,4 @@ date_format(hire_ymd, '%Y-%m-%d') as hire_ymd
 from doctor
 where mcdp_cd like 'CS'
  or mcdp_cd like 'GS'
-order by hire_ymd desc;
+order by hire_ymd desc, dr_name asc;
